@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.cofig.js",
+    "build": "webpack --config webpack.config.js",
     "start": "webpack-dev-server"
   },
   "author": "",
@@ -22,6 +22,7 @@
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.1.14",
+    "workbox-webpack-plugin": "^3.6.3"
   }
 }

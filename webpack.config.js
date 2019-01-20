@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -31,6 +32,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       template: 'src/index.ejs',
+    }),
+    new WorkboxPlugin.InjectManifest({
+      swSrc: './src/sw.js',
     }),
   ],
   devServer: {
